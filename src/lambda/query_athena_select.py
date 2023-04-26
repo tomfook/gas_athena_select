@@ -10,7 +10,7 @@ tmp_bucket = "aws-athena-query-results-****"
 tmpfolder = "lambda-query"
 
 s3 = boto3.client("s3")
-athena = boto3.client("athena", region_name = "ap-northeast-1")
+athena = boto3.client("athena")
 
 try_max = 30
 wait_sec = 1
